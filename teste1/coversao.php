@@ -16,6 +16,7 @@
         
         echo "Valor: R$".number_format($din,2,",","."). "<br/> Conversão: UU$$conv ";
     ?>
+    <button><a href="index.html">Retornar</a></button>
 </div>
 
 </body>

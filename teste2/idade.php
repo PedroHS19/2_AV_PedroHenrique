@@ -12,24 +12,25 @@
     <?php 
       $nome = $_GET["nome"];
       $idade = $_GET["idade"];
+      $idadecrt = date('Y') - $idade; 
 
-      if ($idade <= 11 ) {
+      if ($idadecrt <= 11 ) {
         echo "$nome é criança<br/>";
       }
-      elseif ($idade <=14) {
+        elseif ($idadecrt <=14) {
         echo "$nome é adolecente<br/>";
       }
-      elseif ($idade <=18){
+        elseif ($idadecrt <=18){
         echo "$nome é jovem<br/>";
       }
-      elseif ($idade <= 64) {
+        elseif ($idadecrt <= 64) {
         echo "$nome é adulto<br/>";
       }
-      else {
+        else {
         echo "$nome é idoso<br/>&#1F9D3";
       }
     ?>
-    <button><a href="index.html"> Retornar</a></button>
+    <a href="index.html"> <button>Retornar</button></a>
 </div>
 </body>
 </html>
